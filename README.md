@@ -1,7 +1,7 @@
-# IMPACT-Hack
+# IMPACT-Data-Leak
 How I got access to over 35,000 photos of IMPACT applicants and volunteers, including IDs, driving licenses, passports etc.
 
-So, as i logged in to my IMPACT account and waited for the page to load, I thought i saw a mugshot instead of my profile photo. Weird.
+So, as I logged in to my IMPACT account and waited for the page to load, I thought I saw a mugshot instead of my profile photo. Weird.
 First thing that popped to mind is that maybe the developer of the website put a temporary profile photo and forgot to delete it, so it was being loaded first and then swapped for the real image of the scholar.
 Just out of curiosity, I went checking the HTML info using the built-in inspection tool in Chrome.
 
@@ -32,7 +32,9 @@ Considering the fact that every other day we hear about an organization that has
 
 I contacted IMPACT organization right away. To their credit they answered quickly, thanked me and told me they're taking care of this ASAP, and they did.
 If you try to access the above URIs now you will have to provide credentials.
-The developers now use a more secure method: the URI of the photo is now "https://impact.fidfimpact.org:2096/api/RGApplicants/GetImage/12345?k=6j4ded6f9d4f6tfc9752b865era0f8053y0df870a3r97a66g7c8d4072b9f0da4", meaning each image has a key which must be provided in the GET request in order to access the image. Wrong key will display an error.
+The developers now use a more secure method: the URI of the photo is now 
+"https://impact.fidfimpact.org:2096/api/RGApplicants/GetImage/12345?k=6j4ded6f9d4f6tfc9752b865era0f8053y0df870a3r97a66g7c8d4072b9f0da4",
+meaning each image has a long random key which must be provided in the GET request in order to access the image. Wrong key will display an error.
 
 I learned that sometimes you can stumble-upon an exposed database and get access to sensitive data just by being curious and noticing a mistake. It doesn't have to be as complicated as assembly attacks (like ROP), or network attacks (like IP/DNS/ARP spoofing). 
 Be aware of security and data breaches. Report them. Prevent the next leak!
