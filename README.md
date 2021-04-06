@@ -26,7 +26,7 @@ The database contained over 35,000 photos of IMPACT applicants and volunteers, i
 
 ![impact4](https://user-images.githubusercontent.com/45766976/113699306-0c684c00-96de-11eb-98e9-042b7cf6f25c.png)
 
-So, to sum up. Tens of thousands of ex-IDF soldiers' head shots, IDs, driving licenses, passports... All of it exposed for anyone who enters the above URI. No authentication needed.
+So, to sum up: Tens of thousands of ex-IDF soldiers' head shots, IDs, driving licenses, passports... All of it exposed for anyone who enters the above URI. No authentication needed.
 
 Considering the fact that every other day we hear about an organization that has been hacked, databases leaked, Iranian and other hacker groups attacking tons of Israeli organizations and especially organizations related to the IDF- that was pretty scary.
 
