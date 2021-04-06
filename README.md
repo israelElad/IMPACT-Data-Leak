@@ -32,11 +32,14 @@ Considering the fact that every other day we hear about an organization that has
 
 I contacted IMPACT organization right away. To their credit they answered quickly, thanked me and told me they're taking care of this ASAP, and they did.
 If you try to access the above URIs now you will have to provide credentials.
-The developers now use a more secure method: the URI of the photo is now 
+The developers now use a more secure method: the URI of the photo is now
+
 "https://impact.fidfimpact.org:2096/api/RGApplicants/GetImage/12345?k=6j4ded6f9d4f6tfc9752b865era0f8053y0df870a3r97a66g7c8d4072b9f0da4",
+
 meaning each image has a long random key which must be provided in the GET request in order to access the image. Wrong key will display an error.
 
 I learned that sometimes you can stumble-upon an exposed database and get access to sensitive data just by being curious and noticing a mistake. It doesn't have to be as complicated as assembly attacks (like ROP), or network attacks (like IP/DNS/ARP spoofing). 
+
 Be aware of security and data breaches. Report them. Prevent the next leak!
 
 
