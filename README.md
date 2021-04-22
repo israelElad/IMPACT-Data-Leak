@@ -1,4 +1,4 @@
-# IMPACT-Data-Leak 
+# IMPACT-Data-Leak
 How I got access to over 35,000 photos of IMPACT applicants and volunteers, including IDs, driving licenses, passports etc.
 
 So, as I logged in to my IMPACT account and waited for the page to load, I thought I saw a mugshot instead of my profile photo. Weird.
